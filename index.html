@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="disp-cont">  <input type="text"  id="disp-field" />
+      </div>
+      
+      <div class="buttons">
+
+        <table>
+          <tr>
+            <td colspan="2" class="b1">
+              <input type="button" value="C" onclick='show("")' />
+            </td>
+            <td class="b1">
+              <input type="button" value="%" onclick='values("%")' />
+            </td>
+            <td class="b1">
+              <input type="button" value="/" onclick='values("/")' />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="b2">
+              <input type="button" value="7" onclick='values("7")' />
+            </td>
+            <td class="b2">
+              <input type="button" value="8" onclick='values("8")' />
+            </td>
+            <td class="b2">
+              <input type="button" value="9" onclick='values("9")' />
+            </td>
+            <td class="b1">
+              <input type="button" value="*" onclick='values("*")' />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="b2">
+              <input type="button" value="4" onclick='values("4")' />
+            </td>
+            <td class="b2">
+              <input type="button" value="5" onclick='values("5")' />
+            </td>
+            <td class="b2">
+              <input type="button" value="6" onclick='values("6")' />
+            </td>
+            <td class="b1">
+              <input type="button" value="-" onclick='values("-")' />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="b2">
+              <input type="button" value="1" onclick='values("1")' />
+            </td>
+            <td class="b2">
+              <input type="button" value="2" onclick='values("2")' />
+            </td>
+            <td class="b2">
+              <input type="button" value="3" onclick='values("3")' />
+            </td>
+            <td class="b1">
+              <input type="button" value="+" onclick='values("+")' />
+            </td>
+          </tr>
+
+          <tr>
+            <td class="b2">
+              <input type="button" value="00" onclick='values("00")' />
+            </td>
+            <td class="b2">
+              <input type="button" value="0" onclick='values("0")' />
+            </td>
+            <td class="b2">
+              <input type="button" value="." onclick='values(".")' />
+            </td>
+            <td class="b1">
+              <input type="button" value="=" onclick="result()" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="evaluation.js"></script>
+  </body>
+</html>
